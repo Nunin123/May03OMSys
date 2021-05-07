@@ -23,10 +23,10 @@ Partial Class frmMainScreen2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btnAddStock = New System.Windows.Forms.Button()
         Me.btnDeleteOrder = New System.Windows.Forms.Button()
         Me.btnUpdateOrder = New System.Windows.Forms.Button()
@@ -73,6 +73,7 @@ Partial Class frmMainScreen2
         Me.lblAsterisk4 = New System.Windows.Forms.Label()
         Me.lblAsterisk6 = New System.Windows.Forms.Label()
         Me.lblAsterisk7 = New System.Windows.Forms.Label()
+        Me.btnStatusReport = New System.Windows.Forms.Button()
         CType(Me.dgvStocks, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OMSysStocksDBBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OMSysOrdersDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,10 +86,10 @@ Partial Class frmMainScreen2
         Me.btnAddStock.BackColor = System.Drawing.Color.DarkCyan
         Me.btnAddStock.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddStock.ForeColor = System.Drawing.Color.White
-        Me.btnAddStock.Location = New System.Drawing.Point(777, 44)
+        Me.btnAddStock.Location = New System.Drawing.Point(971, 55)
         Me.btnAddStock.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAddStock.Name = "btnAddStock"
-        Me.btnAddStock.Size = New System.Drawing.Size(90, 34)
+        Me.btnAddStock.Size = New System.Drawing.Size(112, 42)
         Me.btnAddStock.TabIndex = 3
         Me.btnAddStock.Text = "New Stock"
         Me.btnAddStock.UseVisualStyleBackColor = False
@@ -99,10 +100,10 @@ Partial Class frmMainScreen2
         Me.btnDeleteOrder.BackColor = System.Drawing.Color.DarkCyan
         Me.btnDeleteOrder.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDeleteOrder.ForeColor = System.Drawing.Color.White
-        Me.btnDeleteOrder.Location = New System.Drawing.Point(1033, 378)
+        Me.btnDeleteOrder.Location = New System.Drawing.Point(1294, 447)
         Me.btnDeleteOrder.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDeleteOrder.Name = "btnDeleteOrder"
-        Me.btnDeleteOrder.Size = New System.Drawing.Size(68, 34)
+        Me.btnDeleteOrder.Size = New System.Drawing.Size(85, 42)
         Me.btnDeleteOrder.TabIndex = 13
         Me.btnDeleteOrder.Text = "Delete"
         Me.btnDeleteOrder.UseVisualStyleBackColor = False
@@ -113,10 +114,10 @@ Partial Class frmMainScreen2
         Me.btnUpdateOrder.BackColor = System.Drawing.Color.DarkCyan
         Me.btnUpdateOrder.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdateOrder.ForeColor = System.Drawing.Color.White
-        Me.btnUpdateOrder.Location = New System.Drawing.Point(928, 378)
+        Me.btnUpdateOrder.Location = New System.Drawing.Point(1163, 447)
         Me.btnUpdateOrder.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUpdateOrder.Name = "btnUpdateOrder"
-        Me.btnUpdateOrder.Size = New System.Drawing.Size(68, 34)
+        Me.btnUpdateOrder.Size = New System.Drawing.Size(85, 42)
         Me.btnUpdateOrder.TabIndex = 12
         Me.btnUpdateOrder.Text = "Save"
         Me.btnUpdateOrder.UseVisualStyleBackColor = False
@@ -126,10 +127,10 @@ Partial Class frmMainScreen2
         Me.lblStockList.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblStockList.AutoSize = True
         Me.lblStockList.Font = New System.Drawing.Font("Century Gothic", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStockList.Location = New System.Drawing.Point(10, 26)
+        Me.lblStockList.Location = New System.Drawing.Point(12, 32)
         Me.lblStockList.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblStockList.Name = "lblStockList"
-        Me.lblStockList.Size = New System.Drawing.Size(189, 45)
+        Me.lblStockList.Size = New System.Drawing.Size(228, 58)
         Me.lblStockList.TabIndex = 57
         Me.lblStockList.Text = "Stock List"
         '
@@ -138,10 +139,10 @@ Partial Class frmMainScreen2
         Me.lblOrderMgmtSys.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblOrderMgmtSys.AutoSize = True
         Me.lblOrderMgmtSys.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOrderMgmtSys.Location = New System.Drawing.Point(934, 517)
+        Me.lblOrderMgmtSys.Location = New System.Drawing.Point(1168, 646)
         Me.lblOrderMgmtSys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblOrderMgmtSys.Name = "lblOrderMgmtSys"
-        Me.lblOrderMgmtSys.Size = New System.Drawing.Size(172, 16)
+        Me.lblOrderMgmtSys.Size = New System.Drawing.Size(209, 19)
         Me.lblOrderMgmtSys.TabIndex = 59
         Me.lblOrderMgmtSys.Text = "ORDER MANAGEMENT SYSTEM"
         '
@@ -150,10 +151,10 @@ Partial Class frmMainScreen2
         Me.lblOMSYS.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblOMSYS.AutoSize = True
         Me.lblOMSYS.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOMSYS.Location = New System.Drawing.Point(894, 436)
+        Me.lblOMSYS.Location = New System.Drawing.Point(1118, 545)
         Me.lblOMSYS.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblOMSYS.Name = "lblOMSYS"
-        Me.lblOMSYS.Size = New System.Drawing.Size(250, 78)
+        Me.lblOMSYS.Size = New System.Drawing.Size(315, 96)
         Me.lblOMSYS.TabIndex = 58
         Me.lblOMSYS.Text = "OMSYS"
         '
@@ -167,20 +168,20 @@ Partial Class frmMainScreen2
         Me.dgvStocks.AutoGenerateColumns = False
         Me.dgvStocks.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical
         Me.dgvStocks.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvStocks.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvStocks.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.dgvStocks.ColumnHeadersHeight = 29
         Me.dgvStocks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgvStocks.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.Date_Addedd, Me.MaterialNameDataGridViewTextBoxColumn, Me.StockDataGridViewTextBoxColumn, Me.Size, Me.Color, Me.SellingPriceDataGridViewTextBoxColumn, Me.UnitPriceDataGridViewTextBoxColumn})
         Me.dgvStocks.DataSource = Me.OMSysStocksDBBindingSource
         Me.dgvStocks.EnableHeadersVisualStyles = False
-        Me.dgvStocks.Location = New System.Drawing.Point(14, 95)
+        Me.dgvStocks.Location = New System.Drawing.Point(18, 119)
         Me.dgvStocks.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvStocks.Name = "dgvStocks"
         Me.dgvStocks.ReadOnly = True
@@ -188,7 +189,7 @@ Partial Class frmMainScreen2
         Me.dgvStocks.RowHeadersVisible = False
         Me.dgvStocks.RowHeadersWidth = 51
         Me.dgvStocks.RowTemplate.Height = 24
-        Me.dgvStocks.Size = New System.Drawing.Size(853, 445)
+        Me.dgvStocks.Size = New System.Drawing.Size(1066, 556)
         Me.dgvStocks.TabIndex = 85
         '
         'IDDataGridViewTextBoxColumn
@@ -203,9 +204,9 @@ Partial Class frmMainScreen2
         'Date_Addedd
         '
         Me.Date_Addedd.DataPropertyName = "Date_Addedd"
-        DataGridViewCellStyle2.Format = "D"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.Date_Addedd.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle10.Format = "D"
+        DataGridViewCellStyle10.NullValue = Nothing
+        Me.Date_Addedd.DefaultCellStyle = DataGridViewCellStyle10
         Me.Date_Addedd.HeaderText = "Date Added"
         Me.Date_Addedd.MinimumWidth = 6
         Me.Date_Addedd.Name = "Date_Addedd"
@@ -252,26 +253,26 @@ Partial Class frmMainScreen2
         '
         Me.SellingPriceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.SellingPriceDataGridViewTextBoxColumn.DataPropertyName = "Selling_Price"
-        DataGridViewCellStyle3.Format = "C2"
-        Me.SellingPriceDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle11.Format = "C2"
+        Me.SellingPriceDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle11
         Me.SellingPriceDataGridViewTextBoxColumn.HeaderText = "Selling Price"
         Me.SellingPriceDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.SellingPriceDataGridViewTextBoxColumn.Name = "SellingPriceDataGridViewTextBoxColumn"
         Me.SellingPriceDataGridViewTextBoxColumn.ReadOnly = True
-        Me.SellingPriceDataGridViewTextBoxColumn.Width = 93
+        Me.SellingPriceDataGridViewTextBoxColumn.Width = 116
         '
         'UnitPriceDataGridViewTextBoxColumn
         '
         Me.UnitPriceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.UnitPriceDataGridViewTextBoxColumn.DataPropertyName = "Unit_Price"
-        DataGridViewCellStyle4.Format = "C2"
-        DataGridViewCellStyle4.NullValue = Nothing
-        Me.UnitPriceDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle12.Format = "C2"
+        DataGridViewCellStyle12.NullValue = Nothing
+        Me.UnitPriceDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle12
         Me.UnitPriceDataGridViewTextBoxColumn.HeaderText = "Original Price"
         Me.UnitPriceDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.UnitPriceDataGridViewTextBoxColumn.Name = "UnitPriceDataGridViewTextBoxColumn"
         Me.UnitPriceDataGridViewTextBoxColumn.ReadOnly = True
-        Me.UnitPriceDataGridViewTextBoxColumn.Width = 101
+        Me.UnitPriceDataGridViewTextBoxColumn.Width = 126
         '
         'OMSysStocksDBBindingSource
         '
@@ -288,10 +289,10 @@ Partial Class frmMainScreen2
         Me.lblSearchFor.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblSearchFor.AutoSize = True
         Me.lblSearchFor.Font = New System.Drawing.Font("Century Gothic", 5.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSearchFor.Location = New System.Drawing.Point(230, 38)
+        Me.lblSearchFor.Location = New System.Drawing.Point(288, 48)
         Me.lblSearchFor.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSearchFor.Name = "lblSearchFor"
-        Me.lblSearchFor.Size = New System.Drawing.Size(104, 9)
+        Me.lblSearchFor.Size = New System.Drawing.Size(134, 13)
         Me.lblSearchFor.TabIndex = 104
         Me.lblSearchFor.Text = "(ID, Stock Name, Size, Color)"
         '
@@ -301,9 +302,10 @@ Partial Class frmMainScreen2
         Me.btnViewAll.BackColor = System.Drawing.Color.DarkCyan
         Me.btnViewAll.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnViewAll.ForeColor = System.Drawing.Color.White
-        Me.btnViewAll.Location = New System.Drawing.Point(542, 42)
+        Me.btnViewAll.Location = New System.Drawing.Point(678, 52)
+        Me.btnViewAll.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnViewAll.Name = "btnViewAll"
-        Me.btnViewAll.Size = New System.Drawing.Size(90, 34)
+        Me.btnViewAll.Size = New System.Drawing.Size(112, 42)
         Me.btnViewAll.TabIndex = 2
         Me.btnViewAll.Text = "View All"
         Me.btnViewAll.UseVisualStyleBackColor = False
@@ -314,9 +316,10 @@ Partial Class frmMainScreen2
         Me.btnSearch.BackColor = System.Drawing.Color.DarkCyan
         Me.btnSearch.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSearch.ForeColor = System.Drawing.Color.White
-        Me.btnSearch.Location = New System.Drawing.Point(435, 42)
+        Me.btnSearch.Location = New System.Drawing.Point(544, 52)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(90, 34)
+        Me.btnSearch.Size = New System.Drawing.Size(112, 42)
         Me.btnSearch.TabIndex = 1
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = False
@@ -324,19 +327,20 @@ Partial Class frmMainScreen2
         'txtSearch
         '
         Me.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtSearch.Location = New System.Drawing.Point(233, 52)
+        Me.txtSearch.Location = New System.Drawing.Point(291, 65)
         Me.txtSearch.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(188, 20)
+        Me.txtSearch.Size = New System.Drawing.Size(234, 23)
         Me.txtSearch.TabIndex = 0
         '
         'lblID
         '
         Me.lblID.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblID.AutoSize = True
-        Me.lblID.Location = New System.Drawing.Point(888, 95)
+        Me.lblID.Location = New System.Drawing.Point(1110, 121)
+        Me.lblID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblID.Name = "lblID"
-        Me.lblID.Size = New System.Drawing.Size(54, 16)
+        Me.lblID.Size = New System.Drawing.Size(67, 19)
         Me.lblID.TabIndex = 105
         Me.lblID.Text = "Stock ID:"
         '
@@ -345,18 +349,20 @@ Partial Class frmMainScreen2
         Me.txt_ID.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_ID.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSysStocksDBBindingSource, "ID", True))
         Me.txt_ID.Enabled = False
-        Me.txt_ID.Location = New System.Drawing.Point(984, 92)
+        Me.txt_ID.Location = New System.Drawing.Point(1230, 117)
+        Me.txt_ID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_ID.Name = "txt_ID"
-        Me.txt_ID.Size = New System.Drawing.Size(100, 20)
+        Me.txt_ID.Size = New System.Drawing.Size(124, 23)
         Me.txt_ID.TabIndex = 4
         '
         'lbl_DateAdded
         '
         Me.lbl_DateAdded.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lbl_DateAdded.AutoSize = True
-        Me.lbl_DateAdded.Location = New System.Drawing.Point(888, 120)
+        Me.lbl_DateAdded.Location = New System.Drawing.Point(1110, 152)
+        Me.lbl_DateAdded.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_DateAdded.Name = "lbl_DateAdded"
-        Me.lbl_DateAdded.Size = New System.Drawing.Size(79, 16)
+        Me.lbl_DateAdded.Size = New System.Drawing.Size(99, 19)
         Me.lbl_DateAdded.TabIndex = 107
         Me.lbl_DateAdded.Text = "Date Added:"
         '
@@ -364,9 +370,10 @@ Partial Class frmMainScreen2
         '
         Me.txt_StockName.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_StockName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSysStocksDBBindingSource, "Material_Name", True))
-        Me.txt_StockName.Location = New System.Drawing.Point(984, 142)
+        Me.txt_StockName.Location = New System.Drawing.Point(1230, 180)
+        Me.txt_StockName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_StockName.Name = "txt_StockName"
-        Me.txt_StockName.Size = New System.Drawing.Size(100, 20)
+        Me.txt_StockName.Size = New System.Drawing.Size(124, 23)
         Me.txt_StockName.TabIndex = 6
         '
         'date_added
@@ -375,10 +382,11 @@ Partial Class frmMainScreen2
         Me.date_added.Checked = False
         Me.date_added.CustomFormat = ""
         Me.date_added.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.OMSysStocksDBBindingSource, "Date_Addedd", True))
-        Me.date_added.Location = New System.Drawing.Point(984, 117)
+        Me.date_added.Location = New System.Drawing.Point(1230, 148)
+        Me.date_added.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.date_added.Name = "date_added"
         Me.date_added.ShowCheckBox = True
-        Me.date_added.Size = New System.Drawing.Size(198, 20)
+        Me.date_added.Size = New System.Drawing.Size(246, 23)
         Me.date_added.TabIndex = 5
         Me.date_added.Value = New Date(2021, 3, 30, 0, 0, 0, 0)
         '
@@ -386,9 +394,10 @@ Partial Class frmMainScreen2
         '
         Me.lbl_StockName.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lbl_StockName.AutoSize = True
-        Me.lbl_StockName.Location = New System.Drawing.Point(888, 145)
+        Me.lbl_StockName.Location = New System.Drawing.Point(1110, 183)
+        Me.lbl_StockName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_StockName.Name = "lbl_StockName"
-        Me.lbl_StockName.Size = New System.Drawing.Size(76, 16)
+        Me.lbl_StockName.Size = New System.Drawing.Size(96, 19)
         Me.lbl_StockName.TabIndex = 110
         Me.lbl_StockName.Text = "Stock Name:"
         '
@@ -396,9 +405,10 @@ Partial Class frmMainScreen2
         '
         Me.lbl_Stock.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lbl_Stock.AutoSize = True
-        Me.lbl_Stock.Location = New System.Drawing.Point(888, 170)
+        Me.lbl_Stock.Location = New System.Drawing.Point(1110, 214)
+        Me.lbl_Stock.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_Stock.Name = "lbl_Stock"
-        Me.lbl_Stock.Size = New System.Drawing.Size(40, 16)
+        Me.lbl_Stock.Size = New System.Drawing.Size(50, 19)
         Me.lbl_Stock.TabIndex = 111
         Me.lbl_Stock.Text = "Stock:"
         '
@@ -406,18 +416,20 @@ Partial Class frmMainScreen2
         '
         Me.txt_Stock.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_Stock.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSysStocksDBBindingSource, "Stock", True))
-        Me.txt_Stock.Location = New System.Drawing.Point(984, 166)
+        Me.txt_Stock.Location = New System.Drawing.Point(1230, 210)
+        Me.txt_Stock.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_Stock.Name = "txt_Stock"
-        Me.txt_Stock.Size = New System.Drawing.Size(52, 20)
+        Me.txt_Stock.Size = New System.Drawing.Size(64, 23)
         Me.txt_Stock.TabIndex = 7
         '
         'lblSize
         '
         Me.lblSize.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblSize.AutoSize = True
-        Me.lblSize.Location = New System.Drawing.Point(888, 196)
+        Me.lblSize.Location = New System.Drawing.Point(1110, 247)
+        Me.lblSize.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSize.Name = "lblSize"
-        Me.lblSize.Size = New System.Drawing.Size(31, 16)
+        Me.lblSize.Size = New System.Drawing.Size(38, 19)
         Me.lblSize.TabIndex = 113
         Me.lblSize.Text = "Size:"
         '
@@ -428,18 +440,20 @@ Partial Class frmMainScreen2
         Me.cmb_Size.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_Size.FormattingEnabled = True
         Me.cmb_Size.Items.AddRange(New Object() {"XXS", "XS", "S", "M", "L", "XL", "XXL", "N/A"})
-        Me.cmb_Size.Location = New System.Drawing.Point(984, 191)
+        Me.cmb_Size.Location = New System.Drawing.Point(1230, 241)
+        Me.cmb_Size.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmb_Size.Name = "cmb_Size"
-        Me.cmb_Size.Size = New System.Drawing.Size(52, 23)
+        Me.cmb_Size.Size = New System.Drawing.Size(64, 25)
         Me.cmb_Size.TabIndex = 8
         '
         'lbl_Color
         '
         Me.lbl_Color.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lbl_Color.AutoSize = True
-        Me.lbl_Color.Location = New System.Drawing.Point(888, 221)
+        Me.lbl_Color.Location = New System.Drawing.Point(1110, 278)
+        Me.lbl_Color.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_Color.Name = "lbl_Color"
-        Me.lbl_Color.Size = New System.Drawing.Size(39, 16)
+        Me.lbl_Color.Size = New System.Drawing.Size(49, 19)
         Me.lbl_Color.TabIndex = 115
         Me.lbl_Color.Text = "Color:"
         '
@@ -447,18 +461,20 @@ Partial Class frmMainScreen2
         '
         Me.txt_Color.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_Color.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSysStocksDBBindingSource, "Color", True))
-        Me.txt_Color.Location = New System.Drawing.Point(984, 218)
+        Me.txt_Color.Location = New System.Drawing.Point(1230, 274)
+        Me.txt_Color.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_Color.Name = "txt_Color"
-        Me.txt_Color.Size = New System.Drawing.Size(100, 20)
+        Me.txt_Color.Size = New System.Drawing.Size(124, 23)
         Me.txt_Color.TabIndex = 9
         '
         'lbl_SellingPrice
         '
         Me.lbl_SellingPrice.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lbl_SellingPrice.AutoSize = True
-        Me.lbl_SellingPrice.Location = New System.Drawing.Point(888, 246)
+        Me.lbl_SellingPrice.Location = New System.Drawing.Point(1110, 310)
+        Me.lbl_SellingPrice.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_SellingPrice.Name = "lbl_SellingPrice"
-        Me.lbl_SellingPrice.Size = New System.Drawing.Size(73, 16)
+        Me.lbl_SellingPrice.Size = New System.Drawing.Size(93, 19)
         Me.lbl_SellingPrice.TabIndex = 117
         Me.lbl_SellingPrice.Text = "Selling Price:"
         '
@@ -466,18 +482,20 @@ Partial Class frmMainScreen2
         '
         Me.txt_SellingPrice.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_SellingPrice.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSysStocksDBBindingSource, "Selling_Price", True))
-        Me.txt_SellingPrice.Location = New System.Drawing.Point(984, 242)
+        Me.txt_SellingPrice.Location = New System.Drawing.Point(1230, 304)
+        Me.txt_SellingPrice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_SellingPrice.Name = "txt_SellingPrice"
-        Me.txt_SellingPrice.Size = New System.Drawing.Size(100, 20)
+        Me.txt_SellingPrice.Size = New System.Drawing.Size(124, 23)
         Me.txt_SellingPrice.TabIndex = 10
         '
         'lbl_UnitPrice
         '
         Me.lbl_UnitPrice.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lbl_UnitPrice.AutoSize = True
-        Me.lbl_UnitPrice.Location = New System.Drawing.Point(888, 270)
+        Me.lbl_UnitPrice.Location = New System.Drawing.Point(1110, 340)
+        Me.lbl_UnitPrice.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_UnitPrice.Name = "lbl_UnitPrice"
-        Me.lbl_UnitPrice.Size = New System.Drawing.Size(81, 16)
+        Me.lbl_UnitPrice.Size = New System.Drawing.Size(103, 19)
         Me.lbl_UnitPrice.TabIndex = 119
         Me.lbl_UnitPrice.Text = "Original Price:"
         '
@@ -485,9 +503,10 @@ Partial Class frmMainScreen2
         '
         Me.txt_OriginalPrice.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_OriginalPrice.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSysStocksDBBindingSource, "Unit_Price", True))
-        Me.txt_OriginalPrice.Location = New System.Drawing.Point(984, 267)
+        Me.txt_OriginalPrice.Location = New System.Drawing.Point(1230, 336)
+        Me.txt_OriginalPrice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_OriginalPrice.Name = "txt_OriginalPrice"
-        Me.txt_OriginalPrice.Size = New System.Drawing.Size(100, 20)
+        Me.txt_OriginalPrice.Size = New System.Drawing.Size(124, 23)
         Me.txt_OriginalPrice.TabIndex = 11
         '
         'OMSys_OrdersDBBindingSource
@@ -516,9 +535,10 @@ Partial Class frmMainScreen2
         Me.lblAsterisk1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblAsterisk1.AutoSize = True
         Me.lblAsterisk1.ForeColor = System.Drawing.Color.Red
-        Me.lblAsterisk1.Location = New System.Drawing.Point(938, 94)
+        Me.lblAsterisk1.Location = New System.Drawing.Point(1172, 120)
+        Me.lblAsterisk1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAsterisk1.Name = "lblAsterisk1"
-        Me.lblAsterisk1.Size = New System.Drawing.Size(14, 16)
+        Me.lblAsterisk1.Size = New System.Drawing.Size(15, 19)
         Me.lblAsterisk1.TabIndex = 121
         Me.lblAsterisk1.Text = "*"
         '
@@ -527,9 +547,10 @@ Partial Class frmMainScreen2
         Me.lblAsterisk3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblAsterisk3.AutoSize = True
         Me.lblAsterisk3.ForeColor = System.Drawing.Color.Red
-        Me.lblAsterisk3.Location = New System.Drawing.Point(961, 144)
+        Me.lblAsterisk3.Location = New System.Drawing.Point(1201, 182)
+        Me.lblAsterisk3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAsterisk3.Name = "lblAsterisk3"
-        Me.lblAsterisk3.Size = New System.Drawing.Size(14, 16)
+        Me.lblAsterisk3.Size = New System.Drawing.Size(15, 19)
         Me.lblAsterisk3.TabIndex = 123
         Me.lblAsterisk3.Text = "*"
         '
@@ -538,9 +559,10 @@ Partial Class frmMainScreen2
         Me.lblAsterisk4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblAsterisk4.AutoSize = True
         Me.lblAsterisk4.ForeColor = System.Drawing.Color.Red
-        Me.lblAsterisk4.Location = New System.Drawing.Point(924, 169)
+        Me.lblAsterisk4.Location = New System.Drawing.Point(1155, 213)
+        Me.lblAsterisk4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAsterisk4.Name = "lblAsterisk4"
-        Me.lblAsterisk4.Size = New System.Drawing.Size(14, 16)
+        Me.lblAsterisk4.Size = New System.Drawing.Size(15, 19)
         Me.lblAsterisk4.TabIndex = 124
         Me.lblAsterisk4.Text = "*"
         '
@@ -549,9 +571,10 @@ Partial Class frmMainScreen2
         Me.lblAsterisk6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblAsterisk6.AutoSize = True
         Me.lblAsterisk6.ForeColor = System.Drawing.Color.Red
-        Me.lblAsterisk6.Location = New System.Drawing.Point(958, 245)
+        Me.lblAsterisk6.Location = New System.Drawing.Point(1198, 308)
+        Me.lblAsterisk6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAsterisk6.Name = "lblAsterisk6"
-        Me.lblAsterisk6.Size = New System.Drawing.Size(14, 16)
+        Me.lblAsterisk6.Size = New System.Drawing.Size(15, 19)
         Me.lblAsterisk6.TabIndex = 127
         Me.lblAsterisk6.Text = "*"
         '
@@ -560,18 +583,34 @@ Partial Class frmMainScreen2
         Me.lblAsterisk7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblAsterisk7.AutoSize = True
         Me.lblAsterisk7.ForeColor = System.Drawing.Color.Red
-        Me.lblAsterisk7.Location = New System.Drawing.Point(967, 270)
+        Me.lblAsterisk7.Location = New System.Drawing.Point(1209, 340)
+        Me.lblAsterisk7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAsterisk7.Name = "lblAsterisk7"
-        Me.lblAsterisk7.Size = New System.Drawing.Size(14, 16)
+        Me.lblAsterisk7.Size = New System.Drawing.Size(15, 19)
         Me.lblAsterisk7.TabIndex = 128
         Me.lblAsterisk7.Text = "*"
         '
+        'btnStatusReport
+        '
+        Me.btnStatusReport.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnStatusReport.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnStatusReport.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStatusReport.ForeColor = System.Drawing.Color.White
+        Me.btnStatusReport.Location = New System.Drawing.Point(18, 687)
+        Me.btnStatusReport.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnStatusReport.Name = "btnStatusReport"
+        Me.btnStatusReport.Size = New System.Drawing.Size(169, 33)
+        Me.btnStatusReport.TabIndex = 129
+        Me.btnStatusReport.Text = "Generate Status Report"
+        Me.btnStatusReport.UseVisualStyleBackColor = False
+        '
         'frmMainScreen2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1192, 585)
+        Me.ClientSize = New System.Drawing.Size(1490, 731)
+        Me.Controls.Add(Me.btnStatusReport)
         Me.Controls.Add(Me.lblAsterisk7)
         Me.Controls.Add(Me.lblAsterisk6)
         Me.Controls.Add(Me.lblAsterisk4)
@@ -663,4 +702,5 @@ Partial Class frmMainScreen2
     Friend WithEvents Color As DataGridViewTextBoxColumn
     Friend WithEvents SellingPriceDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents UnitPriceDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents btnStatusReport As Button
 End Class
