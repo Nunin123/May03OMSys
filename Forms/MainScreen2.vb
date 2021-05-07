@@ -160,7 +160,9 @@ Public Class frmMainScreen2
 
     Private Sub dgvStocks_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles dgvStocks.CellFormatting
         For Each row As DataGridViewRow In dgvStocks.Rows
-            If Convert.ToString(row.Cells(3).Value) <= 10 Then
+            If Convert.ToString(row.Cells(3).Value) = "" Then
+                dgv_styleRow()
+            ElseIf Convert.ToString(row.Cells(3).Value) <= 10 Then
                 row.Cells(3).Style.BackColor = Drawing.Color.Red
             Else
                 row.Cells(3).Style.BackColor = Drawing.Color.LightGreen
