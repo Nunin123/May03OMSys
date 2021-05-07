@@ -1,6 +1,7 @@
 ﻿
 Public Class frmMainScreen2
     Dim yes As Boolean = False
+
     Sub dgv_styleRow()
         For i As Integer = 0 To dgvStocks.RowCount - 1
             If i Mod 2 = 0 Then

@@ -8,6 +8,12 @@
     Private Sub btnManageStock_Click(sender As Object, e As EventArgs) Handles btnManageStock.Click
         Dim ManageStocks As New frmMainScreen2
         ManageStocks.Show()
+
+        For Each row As DataGridViewRow In ManageStocks.dgvStocks.Rows
+            If row.Cells(3).Style.BackColor = Drawing.Color.Red Then
+                MessageBox.Show("Some stocks are almost out-of-stock. Time to replenish!", "Availability of Stocks", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
+        Next
         Close()
     End Sub
 
